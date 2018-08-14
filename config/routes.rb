@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   patch  '/tasks/:id' => 'tasks#update'
   delete '/tasks/:id' => 'tasks#destroy'
 
-  # resources :tasks
+  root 'tasks#home'  # resources :tasks
 end
