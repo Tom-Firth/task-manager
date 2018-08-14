@@ -4,6 +4,8 @@
     <title>TaskManager</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -11,5 +13,8 @@
 
   <body>
     <%= yield %>
+    <footer class="center-align">
+      <span class="color-white bold">&copy2018 <a class="color-white bold a-appli" href="https://github.com/Tom-Firth">Tom-Firth</a></span>
+    </footer>
   </body>
 </html>

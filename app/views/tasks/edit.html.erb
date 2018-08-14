@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Edit a Task</h1>
+
+  <%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+  <div class=".inline">
+    <%= link_to "Back", tasks_path, class: "waves-effect waves-light btn btn-index bold" %>
+
+    <%= f.submit :update, class: "waves-effect waves-light btn btn-index bold" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Create a Task</h1>
+
+  <%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <div class="inline">
+    <%= link_to "Back", tasks_path, class: "waves-effect waves-light btn btn-index bold" %>
+    <%= f.submit :create, class: "waves-effect waves-light btn btn-index bold" %>
+    <% end %>
+  </div>
+</div>

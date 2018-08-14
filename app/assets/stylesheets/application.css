@@ -13,3 +13,69 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: white;
+}
+
+input[type="submit"] {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type="text"] {
+  text-decoration:none;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid white!important;
+  color: white!important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.float-right {
+  float: right;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.color-white {
+  color: white;
+}
+
+input[type="checkbox"]:not(:checked), input[type="checkbox"]:checked {
+  position: static;
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
+  margin: 20px 0 20px 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100vw;
+}
+
+.a-appli {
+  opacity: 0.8;
+}
+
+.a-appli:hover {
+  opacity: 1;
+}

@@ -1,0 +1,77 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.index-task {
+  // width: 900px;
+  height: 50px;
+  // border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.index-0{
+  padding-left: 20px;
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+
+.index-1{
+  padding-left: 20px;
+  display: inline-block;
+  min-width: 100px;
+  text-transform: uppercase;
+}
+
+.index-2{
+  text-align: left;
+  display: inline-block;
+  min-width: 500px;
+}
+
+.index-3{
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+
+.index-4{
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+
+.index-5{
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+
+.fa-times {
+  color: red;
+}
+
+.fa-edit, .fa-eye {
+  color: #051937;
+}
+
+.btn-index {
+  background-color: #051937;
+}
+
+.btn-index:hover {
+  background-color: #a8eb12;
+}
+
+.btn-delete {
+  background-color: #051937;
+}
+
+.btn-delete:hover {
+  background-color: red!important;
+}

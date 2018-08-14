@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Tasks</h1>
+  <ul>
+    <% @tasks.each { |task| %>
+    <li class="index-task z-depth-1"><span class="index-0">
+
+      <% if task.completed == true %>
+        <i class="far fa-check-square"></i>
+      <% elsif task.completed == false %>
+        <i class="far fa-square"></i>
+      <% end %>
+
+      </span> <span class="bold index-1"><%= task.title %></span><span class="index-2"><%= task.details %></span>
+    <div class="float-right">
+    <span class="index-3"><%= link_to "", task_path(task), class: "far fa-eye" %></span>
+    <span class="index-4"><%= link_to "", edit_task_path(task), class: "fas fa-edit" %></span>
+    <span class="index-5"><%= link_to "", task_path(task), class: "fas fa-times",
+        method: :delete,
+        data: { confirm: "Are you sure?" } %></span></div></li>
+
+
+    <% } %>
+
+
+  </ul>
+  <div class="center-align">
+    <%= link_to "Create Task", new_task_path, class: "waves-effect waves-light btn btn-index bold" %>
+  </div>
+</div>

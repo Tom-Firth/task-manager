@@ -1,0 +1,15 @@
+<div class="container">
+<h1><%= @task.title %></h1>
+    <% if @task.completed == true %>
+      <p class="color-white"><span class="bold">Complete:</span> <i class="far fa-check-square"></i></p>
+    <% elsif @task.completed == false %>
+      <p class="color-white">Complete: <i class="far fa-square"></i></p>
+    <% end %>
+<p class="color-white"><span class="bold">Details :</span> <%= @task.details %></p>
+
+<%= link_to "Back", tasks_path, class: "waves-effect waves-light btn btn-index bold" %>
+<%= link_to "Update", edit_task_path, class: "waves-effect waves-light btn btn-index bold"  %>
+<%= link_to "Delete", task_path(@task), class: "waves-effect waves-light btn btn-index btn-delete bold",
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+</div>
